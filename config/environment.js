@@ -1,11 +1,23 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'inventory',
     environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: "AIzaSyBX9ZqJYPwxdFgCL1TqJvKCOx_K5wC3Ne4",
+      authDomain: "itbca-asset-tracker.firebaseapp.com",
+      databaseURL: "https://itbca-asset-tracker.firebaseio.com",
+      projectId: "itbca-asset-tracker",
+      storageBucket: "itbca-asset-tracker.appspot.com",
+      messagingSenderId: "485997428480",
+      appId: "1:485997428480:web:6f182f94af51b9263efde5",
+      measurementId: "G-VNPZ3YSNQL"
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -25,10 +37,10 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_TRANSITIONS = true;
+    ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
