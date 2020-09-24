@@ -5,17 +5,18 @@ module.exports = {
   },
   purge: ['./app/**/*.hbs'],
   theme: {
-    extend: {
-      colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        body: 'var(--color-text)'
-      },
-      fontFamily: {
-        display: ['Raleway', 'sans-serif'],
-        body: ['Roboto', 'sans-serif']
-      },
+    colors: {
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      body: 'var(--color-text)',
+      white: 'var(--color-white)'
     },
+    fontFamily: {
+      display: ['Raleway', 'sans-serif'],
+      body: ['Roboto', 'sans-serif']
+    },
+
+    extend: {}
   },
   variants: {},
   plugins: []
